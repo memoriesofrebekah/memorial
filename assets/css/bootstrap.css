@@ -295,6 +295,7 @@ table {
 html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%;
 }
 
 body {
@@ -303,6 +304,19 @@ body {
   line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://github.com/belowmars/remember/blob/master/images/lav3.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 input,
