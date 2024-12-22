@@ -319,6 +319,11 @@ body {
     line-height: 1.428571429;
     color: #333;
     background-color: #fff
+    background: url(https://github.com/belowmars/remember/blob/master/images/lav3.jpg?raw=true) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
