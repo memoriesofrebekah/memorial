@@ -4,10 +4,10 @@
 $(document).ready(function () {
 
     //TODO fill out your flickr API key
-    var flickr_api_key = xxxxxxxxx ;
+    var flickr_api_key = d6c3030a6e6e19152bc6df29d6fdb31e ;
 
     //TODO fill the tag you are using to tag pictures of your loved one
-    var loved_one_tag = xxxxxxx ;
+    var loved_one_tag = rebekahforanmemories ;
 
     //URL for the REST API
     var flickrFeedUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=" + flickr_api_key + "&tags=" + loved_one_tag + "&per_page=100"
