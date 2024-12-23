@@ -10,8 +10,8 @@ $(document).ready(function () {
     var loved_one_tag = rebekahforanmemories ;
 
     //URL for the REST API
-    //var flickrFeedUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=" + flickr_api_key + "&tags=" + loved_one_tag + "&per_page=100"
-    var flickrFeedUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=d6c3030a6e6e19152bc6df29d6fdb31e&tags=rebekahforanmemories&per_page=100"
+    var flickrFeedUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=" + flickr_api_key + "&tags=" + loved_one_tag + "&per_page=100"
+    //var flickrFeedUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=d6c3030a6e6e19152bc6df29d6fdb31e&tags=rebekahforanmemories&per_page=100"
 
     $.getJSON(flickrFeedUrl + "&format=json&jsoncallback=?", { format: "json" },
         function (data) {
