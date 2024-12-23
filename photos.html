@@ -71,6 +71,27 @@
         <p>This gallery automatically loads photographs that have been <a href="https://www.flickr.com/search/?q=rebekahforanmemories&m=tags&ss=0&ct=0&mt=all&w=all&adv=1">tagged on flickr with "rebekahforanmemories"</a>. </p>
     </div>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script>
+    (function() {
+      var flickerAPI = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=d6c3030a6e6e19152bc6df29d6fdb31e&tags=rebekahforanmemories&per_page=100";
+      $.getJSON( flickerAPI, {
+        tagmode: "any",
+        format: "json"
+      })
+      .done(function( data ) {
+        $.each( data.items, function( i, item ) {
+          $( "" ).attr( "src", item.media.m ).appendTo( "#images" );
+          if ( i === 11 ) {
+            return false;
+          }
+        });
+      });
+    })();
+  </script>
+
+      
+
     <style type="text/css">
       .shows-grid {
           margin-bottom: 30px;
