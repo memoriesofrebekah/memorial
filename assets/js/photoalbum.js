@@ -2,7 +2,8 @@ const apiKey = 'd6c3030a6e6e19152bc6df29d6fdb31e';
 const tag = 'rebekahforanmemories';
 const photosContainer = document.getElementById('photos');
 
-fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${tag}&format=json&nojsoncallback=1`)
+//fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${tag}&format=json&nojsoncallback=1`)
+fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=d6c3030a6e6e19152bc6df29d6fdb31e&tags=rebekahforanmemories&format=json&nojsoncallback=1`)
   .then(response => response.json())
   .then(data => {
     if (data.photos.photo.length > 0) {
