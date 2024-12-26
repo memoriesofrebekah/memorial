@@ -105,3 +105,44 @@ body {
   }
 
 }
+
+
+.quote {
+  background-color: #6b936a;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.name {
+  background-color: #333;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Reset */
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+blockquote::after {
+  border-color: transparent #6b936a transparent transparent;
+  border-image: none;
+  border-style: solid;
+  border-width: 20px;
+  top: 40px;
+  content: " ";
+  display: block;
+  right: 75%;
+  position: relative;
+}
+
+
