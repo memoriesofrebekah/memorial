@@ -138,7 +138,7 @@ blockquote::after {
   border-image: none;
   border-style: solid;
   border-width: 20px;
-  top: 40px;
+  top: 20px;
   content: " ";
   display: block;
   right: 75%;
